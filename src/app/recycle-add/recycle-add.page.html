@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Recycled Item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Select Item</ion-label>
+      <ion-select [(ngModel)]="selectedItem">
+        <ion-select-option value="paper">Paper</ion-select-option>
+        <ion-select-option value="plastic">Plastic</ion-select-option>
+ <!-- will add extra here -->
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Quantity (kgs)</ion-label>
+      <ion-input type="number" [(ngModel)]="quantity"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="save()">Save</ion-button>
+</ion-content>
