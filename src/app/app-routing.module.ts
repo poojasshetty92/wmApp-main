@@ -11,18 +11,18 @@ const routes: Routes = [
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
-// {
-  //  path: 'recycle',
-   // loadChildren: () => import('./recycle/recycle.module').then( m => m.RecycleModule)
- //},
+
   {
     path: 'recycle-add',
     loadChildren: () => import('./recycle-add/recycle-add.module').then( m => m.RecycleAddPageModule)
   },
   {
-    path: 'add',
-    loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
-  }
+    path: 'add-image',
+    loadChildren: () => import('./add-image/add-image.module').then( m => m.AddImagePageModule)
+  },
+  
+   
+  
 ];
 
 @NgModule({
